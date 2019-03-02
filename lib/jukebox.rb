@@ -33,7 +33,7 @@ puts "Please enter a song name or number:"
 user_choice = gets.chomp
 
   songs.select do |i|
-  if i.include?(user_choice) == true || user_choice == (arr.index(i) + 1)
+  if i.include?(user_choice) == true || user_choice == (songs.index(i) + 1)
   puts "Playing #{i}"
   else
   puts "Invalid input, please try again"
